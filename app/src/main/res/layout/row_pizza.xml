@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/imgPizza"
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pizza image"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imgNav"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Navigation icon"
+        android:src="@drawable/ic_nav_arrow" />
+
+    <LinearLayout
+        android:layout_width="208dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="23dp"
+        android:layout_toStartOf="@id/imgNav"
+        android:layout_toEndOf="@id/imgPizza"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="SPINACH PIZZA"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="Portions icon"
+                android:src="@drawable/ic_persons" />
+
+            <TextView
+                android:id="@+id/tvPortions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="2"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:contentDescription="Time icon"
+                android:src="@drawable/ic_time_clock" />
+
+            <TextView
+                android:id="@+id/tvDuree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
